@@ -1,0 +1,5 @@
+ampFreqDemo
+mixingSignalsDemo
+overtonesDemo
+instrumentSpectraDemo
+guessTheSound
