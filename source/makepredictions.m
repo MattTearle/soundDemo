@@ -1,3 +1,7 @@
+%%
+load instrumentspectra
+
+%%
 instnames = categories(instrument);
 instrument = mergecats(instrument,instnames(~cellfun(@isempty,regexp(instnames,'Trombone'))),'Trombone');
 instrument = mergecats(instrument,instnames(~cellfun(@isempty,regexp(instnames,'Flute'))),'Flute');
@@ -8,7 +12,8 @@ hist(instrument)
 
 %%
 instnames = categories(instrument);
-insts2keep = instnames([1:3,5:8,10,14,18:end]);
+insts2keep = {'Bells','Cello','Clarinet','Double Bass','Flute','Piano',...
+    'Saxophone','Trombone','Trumpet','Viola','Violin','Xylophone'};
 idx = ~ismember(instrument,insts2keep);
 soundclips(:,idx) = [];
 note(idx) = [];
@@ -26,7 +31,7 @@ bt_inst = TreeBagger(200,spec(:,trainidx)',instrument(trainidx),'OOBPred','On');
 plot(oobError(bt_inst))
 
 %%
-bt_inst = TreeBagger(150,spec(:,trainidx)',instrument(trainidx));
+bt_inst = TreeBagger(100,spec(:,trainidx)',instrument(trainidx));
 instpred = predict(bt_inst,spec(:,testidx)');
 
 %%
