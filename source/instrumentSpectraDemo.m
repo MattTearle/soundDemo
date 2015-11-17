@@ -24,7 +24,8 @@ classdef instrumentSpectraDemo < handle
         function app = instrumentSpectraDemo
             % Get data from file
             instdat = load('instrumentspectra');
-            app.soundbites = instdat.soundclips;
+            % Convert from int16 to double
+            app.soundbites = double(instdat.soundclips)/32767;
             app.spectra = instdat.spec;
             app.notes = instdat.note;
             app.instruments = instdat.instrument;

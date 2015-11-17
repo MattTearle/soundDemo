@@ -40,7 +40,8 @@ classdef guessTheSound < handle
             app.predictions = preddat.predictions;
             app.instnames = unique(app.predictions.Instrument);
             % Extract recordings and spectra that were in the test set
-            app.soundbites = instdat.soundclips(:,app.predictions.Index);
+            % Convert int16 to double
+            app.soundbites = double(instdat.soundclips(:,app.predictions.Index))/32767;
             app.spectra = instdat.spec(:,app.predictions.Index);
             
             % Add controls & graphics objects
