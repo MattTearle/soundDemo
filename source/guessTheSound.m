@@ -213,6 +213,10 @@ classdef guessTheSound < handle
                 end
             end
         end
+        
+        % no need to display anything about the app to the command window
+        function display(app) %#ok<MANU,DISPLAY>
+        end
 
     end
     
