@@ -1,0 +1,73 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="710516020" file="C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Apps\Guess the Sound.prj" location="C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Apps" name="Guess the Sound" target="target.mlapps" target-name="Package App">
+    <param.appname>Guess the Sound</param.appname>
+    <param.authnamewatermark>Matt Tearle</param.authnamewatermark>
+    <param.email />
+    <param.company>MathWorks</param.company>
+    <param.icon>${PROJECT_ROOT}\Guess the Sound_resources\icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\Guess the Sound_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\Guess the Sound_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\Guess the Sound_resources\icon_16.png</file>
+    </param.icons>
+    <param.summary>Challenges human player to guess the instrument based on its sound. The computer also guesses, using a Machine Learning technique.</param.summary>
+    <param.description />
+    <param.screenshot>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Screenshots\guessthesound.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\SoundAndMusic</param.output>
+    <param.guid>0a4c2dec-956e-4c76-a088-722cfaac5ed0</param.guid>
+    <unset>
+      <param.email />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\source\guessTheSound.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\source\instrumentspectra.mat</file>
+      <file>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\source\makekeyboard.m</file>
+      <file>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\source\predictiontrees.mat</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\MATLAB\MATLAB Drive\sandbox\soundDemo" name="SoundAndMusic" optional="false">C:\MATLAB\MATLAB Drive\sandbox\soundDemo\SoundAndMusic</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2016b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

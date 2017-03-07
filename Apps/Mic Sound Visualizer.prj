@@ -1,0 +1,75 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="4194030513" file="C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Apps\Mic Sound Visualizer.prj" location="C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Apps" name="Mic Sound Visualizer" target="target.mlapps" target-name="Package App">
+    <param.appname>Mic Sound Visualizer</param.appname>
+    <param.authnamewatermark>Matt Tearle</param.authnamewatermark>
+    <param.email />
+    <param.company>MathWorks</param.company>
+    <param.icon>${PROJECT_ROOT}\Mic Sound Visualizer_resources\icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\Mic Sound Visualizer_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\Mic Sound Visualizer_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\Mic Sound Visualizer_resources\icon_16.png</file>
+    </param.icons>
+    <param.summary>Shows the sound wave and power spectrum of sound being recorded through the computer microphone</param.summary>
+    <param.description />
+    <param.screenshot>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Screenshots\wavedecomposition.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.1</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Apps</param.output>
+    <param.guid>4c55d188-56b8-4ea8-90de-0f78ac7c63f9</param.guid>
+    <unset>
+      <param.email />
+      <param.description />
+      <param.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\source\soundAnalysisDemo.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\source\makekeyboard.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\MATLAB\MATLAB Drive\sandbox\soundDemo" name="Apps" optional="false">C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Apps</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2016b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

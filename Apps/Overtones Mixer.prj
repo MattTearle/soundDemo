@@ -1,0 +1,76 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1537245656" file="C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Apps\Overtones Mixer.prj" location="C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Apps" name="Overtones Mixer" target="target.mlapps" target-name="Package App">
+    <param.appname>Overtones Mixer</param.appname>
+    <param.authnamewatermark>Matt Tearle</param.authnamewatermark>
+    <param.email />
+    <param.company>MathWorks</param.company>
+    <param.icon>${PROJECT_ROOT}\Overtones Mixer_resources\icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\Overtones Mixer_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\Overtones Mixer_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\Overtones Mixer_resources\icon_16.png</file>
+    </param.icons>
+    <param.summary>Demonstrates how overtones create different instrument sounds</param.summary>
+    <param.description />
+    <param.screenshot>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Screenshots\overtones.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.1</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Apps</param.output>
+    <param.guid>1fa740f1-306e-4ff0-8c95-da6c9a7b2173</param.guid>
+    <unset>
+      <param.email />
+      <param.description />
+      <param.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\source\overtonesDemo.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\source\icons.mat</file>
+      <file>C:\MATLAB\MATLAB Drive\sandbox\soundDemo\source\makekeyboard.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\MATLAB\MATLAB Drive\sandbox\soundDemo" name="Apps" optional="false">C:\MATLAB\MATLAB Drive\sandbox\soundDemo\Apps</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2016b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
